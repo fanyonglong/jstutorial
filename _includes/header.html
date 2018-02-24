@@ -9,7 +9,7 @@
 	<h1><a href="/">{{ site.sitename }} </a></h1>
 		<ul class="dropdown">
 			{% for chapter in site.chapters %}
-			<li><a href="/#{{chapter}}">{{site.[chapter]}}</a></li>
+			<li><a href="/jstutorial/#{{chapter}}">{{site.[chapter]}}</a></li>
 			{% endfor %}
 		</ul>
 	</li>
@@ -26,7 +26,7 @@
 {% if article.url == page.url %}
 <li class="active"><a href="#">{{ article.title }}</a></li>
 {% else %}
-<li><a href="{{article.url}}">{{ article.title }}</a></li>
+<li><a href="/jstutorial/{{article.url}}">{{ article.title }}</a></li>
 {% endif %}
 {% endif %}
 {% endfor %}
